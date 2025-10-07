@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Gutendex</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav button {
+      background: #555;
+      color: #fff;
+      border: none;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background: #007bff;
+    }
+  </style>
 </head>
 <body>
-    
+  <nav>
+    <button onclick="Home()">Home</button>
+    <button onclick="Informativa()">Informativa</button>
+    <button onclick="Capturados()">Colección</button>
+    <button onclick="Favoritos()">Favoritos</button>
+  </nav>
+
+  <div id="root">
+    <!-- Contenido dinámico -->
+  </div>
+
+  <!-- ⚙️ El orden de carga es importante -->
+  <script src="paginas/conexion.js"></script>
+  <script src="paginas/home.js"></script>
+  <script src="paginas/detalle.js"></script>
+  <script src="paginas/favoritos.js"></script>
+  <script src="paginas/informativa.js"></script>
+  <script src="paginas/capturados.js"></script>
 </body>
 </html>
