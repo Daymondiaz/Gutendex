@@ -25,8 +25,7 @@ async function General() {
     Home();
   } else {
     root.innerHTML = `
-      <p>No se pudieron cargar los libros 😢</p>
-      <p>Verifica tu conexión o la API Gutendex.</p>
+      <p>No se pudieron cargar los libros </p>
     `;
   }
 }

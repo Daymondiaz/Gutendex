@@ -1,6 +1,5 @@
-// ==============================================
+
 // página principal - listado y buscador de libros
-// ==============================================
 
 // genera la lista HTML de libros
 function generarLista(arrayLibros) {
